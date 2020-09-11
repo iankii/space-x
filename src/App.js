@@ -8,7 +8,11 @@ import Home from './Home';
 function App(props) {
   return (
     // <div>Home</div>
-    <Home name='anki' {...props} />
+    <div>
+      <Home name='anki' {...props} />
+          {/* we can add footer here */}
+      <h3 className='Footer'><b>Developed By :</b> {'{Ankit Pal}'}</h3>
+    </div>
   );
 }
 
