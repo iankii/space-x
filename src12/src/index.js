@@ -6,7 +6,7 @@ import store from './Redux/store'
 import App from './App'
 import './index.css';
 
-ReactDOM.render(
+ReactDOM.hydrate(
     <Provider store={store}>
         <App />
     </Provider>,
