@@ -11,7 +11,8 @@ const useStyles = makeStyles({
     height: '230px',
     backgroundColor: 'lightgray',
     // height: 'auto',
-    margin: '15px 25px 0'
+    margin: '15px 25px 0',
+    backgroundSize: 'contain',
   }
 });
 
