@@ -24,10 +24,10 @@ function FiltersView({updateFilters}) {
 
   return (
     <div className="filetrsContainer">
-      <h2>SapceX Launch Programs</h2>
+      <h1>SapceX Launch Programs</h1>
       <div className="filetrsView">
-        <h3>Filters</h3>
         <div className="yearsContainer" >
+          <h2 className="FiltersTitle">Filters</h2>
           <h4>Launch Year</h4>
           <ToggleButtons
             defaultSelection={''}

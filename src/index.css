@@ -17,12 +17,22 @@ code {
   display: flex;
 }
 
-.filetrsView {}
+.filetrsView {
+  /* background-color: aliceblue;
+  padding: 25px; */
+}
+
+.FiltersTitle{
+  align-self: baseline;
+}
 
 .yearsContainer {
   align-items: center;
   display: flex;
   flex-direction: column;
+  background-color: aliceblue;
+  margin: 25px;
+  padding: 0 20px;
 }
 
 .years {
@@ -43,11 +53,38 @@ code {
   width: 100%;
 }
 
-@media only screen and (min-width: 600px) {
+
+
+.Card {
+  overflow: 'hidden';
+  width: '250px';
+  margin: '15px';
+  height: '500px';
+}
+
+
+@media only screen and (max-width: 700px) {
+  .container {
+    /* background-color: lightblue; */
+    flex-direction: column;
+  }
+
+  .detailsContainer {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .years {
+  }
+}
+
+@media only screen and (min-width: 700px) {
   
   .detailsContainer {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
   }
 
   .container {
@@ -61,7 +98,7 @@ code {
   }
 
   .filetrsView {
-    width: 250px;
+    width: 100%;
   }
 
   .yearButton {
@@ -71,19 +108,20 @@ code {
     height: 40px;
     background-color: green;
   }
+
+  .Card {
+    width: 40%;
+    margin: 5px 10px;
+  }
 }
-@media only screen and (max-width: 600px) {
-  .container {
-    /* background-color: lightblue; */
-    flex-direction: column;
+
+@media only screen and (min-width: 1024px) {
+  .filetrsContainer {
+      max-width: 330px;
   }
 
-  .detailsContainer {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .years {
+  .Card {
+    width: 23%;
+    margin: 5px;
   }
 }

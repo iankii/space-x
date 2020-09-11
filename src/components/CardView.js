@@ -7,12 +7,6 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles({
-  root: {
-    overflow: 'hidden',
-    width: '250px',
-    margin: '15px',
-    height: '500px'
-  },
   media: {
     height: '230px',
     backgroundColor: 'lightgray',
@@ -26,7 +20,7 @@ export default function MediaCard(props) {
   const classes = useStyles();
 
   return (
-    <Card className={classes.root}>
+    <Card className={`Card`}>
       <CardActionArea>
         <CardMedia
           className={classes.media}
